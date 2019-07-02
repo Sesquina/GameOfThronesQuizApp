@@ -1,110 +1,303 @@
-body {
-    margin-top: 100px;
-    background-image: url('https://wallpapercave.com/wp/wp2131697.jpg');
-    font-family: 'Cinzel Decorative', cursive;
+html {
+  box-sizing: border-box;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
-.js-container {
-    width: 600px;
-    margin: 0 auto;
-    border-radius: 10px;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  background: url('https://wallpapercave.com/wp/wp2131697.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:  rgba(0, 0, 0, 0.75);
+  background-blend-mode: screen;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 0 1px 0 #D1BDA2;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #b44242;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-blend-mode: screen
+}
+
+ p{
+    margin-top: 80px;
+    border-radius: 4px;
     border: solid silver 1px;
     background-color: rgba(255,255,255,0.8);
-    padding: 20px;
-    border: 3px solid #b44242;
+    padding: 10px;
+    border: 1px solid #b44242;
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
- }
- 
- img {
-   border: 3px solid #2B818E;
- }
-
- h2 {
-     color: #D1BDA2;
- }
- 
- span {
-    font-size: 18px;
+    background-blend-mode: screen
 }
 
-p {
-    font-size: 20px;
-}
-    
-.start-over {
-    background-color: #80A098; /* Green */
-    border: none;
-    color: white;
-    padding: 20px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius:10px;
-    
+
+#js-start-button {
+  background-color: #b44242;
+  color: #D1BDA2;
+  font-size: 40px;
+  font-weight: 700;
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  text-align: center;
+  width: 225px;
+  margin: 400px auto;
+  display: block;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-a {
-    text-decoration:  none;
+
+#js-start-button:hover {
+  background-color: grey;
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: 2px solid #2B818E;
 }
- .centered {
-     text-align: center;
- }
- 
- .popup {
-     display: none;
-     
-     
- }
- .popup-body {
-     margin-bottom: 80px;
- }
- 
- .popup.show {
-     display: block;
-     text-align: center;
- }
- 
- .hide {
-     display: none;
- }
- 
- h1 {
-    font-family: 'Cinzel Decorative', cursive;
- }
- 
- 
- .centered {
-     text-align: center;
- }
- 
- .popup-hidden {
-     display:none;
- }
- 
- .start-quiz, .js-question-submit {
-     display: block;
-     border-radius: 10px;
-     background-color: rgb(29,32,67);
-     color: white;
-     margin: 20px auto;
-     font-family: 'Cinzel', serif;
-     font-size: 25px;
-     height: 45px;
-     padding: 5px;
-    text-align: center;
- }
- 
- input[type="radio"] {
-     margin: 10px;
-     transform: scale(1.5);
- }
 
- .result {
-     color: black;
- }
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  border: 1px solid #b44242;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
- .js-container, .popup.show {
-     width:100;
- }
+legend {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 0 #2B818E;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+.radiogroup {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+input[type="radio"] {
+  padding-left: 15px;
+  margin-right: 1em;
+  margin-top: 7px;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #2B818E;
+}
+
+
+.submitButton {
+  background-color: #D1BDA2;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  height: 10%;
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+}
+
+.submitButton:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: 2px solid #b44242;
+}
+
+.questionOrder, .scoreOrder {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #D1BDA2;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #D1BDA2;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+
+.correctText {
+  font-size: 40px;
+  color: #2B818E;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 0 #D1BDA2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #b44242;
+  border-radius: 4px;
+  margin: 10% auto;
+  width: 280px;
+
+}
+
+.incorrectText {
+  font-size: 40px;
+  color: #b44242;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 0 #D1BDA2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #2B818E;
+  border-radius: 4px;
+  margin: 10% auto;
+  width: 300px;
+}
+
+.nextButton {
+  background-color: #b44242;
+  color: black;
+  font-size: 50px;
+  font-weight: 600;
+  width: 200px;
+  border: 2px solid #D1BDA2;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.nextButton:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: 2px solid #2B818E;
+}
+
+
+.finalScore {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #D1BDA2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #D1BDA2;
+  border-radius: 4px;
+  margin: 100px auto;
+  width: 275px;
+}
+
+.playAgainButton {
+  background-color: #2B818E;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  height: 10%;
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.playAgainButton:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: 2px solid #D1BDA2;
+}
+
+@media only screen and (min-width: 550px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  #js-start-button {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  legend {
+    font-size: 35px;
+  }
+
+  label {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  #js-start-button {
+    width: 350px;
+    font-size: 70px;
+  }
+
+ legend {
+    font-size: 50px;
+  }
+
+  label {
+    font-size: 40px;
+  }
+
+  .submitButton {
+    font-size: 55px;
+    width: 300px;
+  }
+
+  .questionOrder, .scoreOrder {
+    width: 450px;
+    font-size: 45px;
+  }
+
+  .incorrectText {
+    font-size: 45px;
+    width: 450px;
+  }
+
+  .correctText {
+    font-size: 60px;
+    width: 450px;
+  }
+
+  .nextButton {
+    width: 300px;
+    font-size: 60px;
+  }
+
+  .finalScore {
+    width: 500px;
+    font-size: 70px;
+  }
+
+  .playAgainButton {
+    width: 400px;
+    font-size: 60px;
+  }
+}
