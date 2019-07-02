@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is my Quiz App based on the HBO TV Series Game of Thrones
 I used javascript/jQuery/CSS/html
 
@@ -12,3 +13,8 @@ If the user does not get the selected answer correct, the correct answer appears
 Through each question, the user knows which question they are on and what their score is.
 
 Finally, once they are done all 10 questions, a button appears asking them to play again, and it redirects the user to the start of the quiz. */
+=======
+This is my Bloc Quiz App based on the HBO TV Series Game of Thrones
+I used HTML/CSS/JavaScript/jQuery 
+Enjoy! 
+>>>>>>> 9a6e588cd1c7b69bb8ea5f39aa083a84068694a8
